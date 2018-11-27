@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { PlantDatabaseService } from "./services/plant-database.service";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
@@ -19,12 +20,14 @@ import { PlantDatabaseService } from "./services/plant-database.service";
     LandingComponent,
     AboutComponent,
     ShopComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [PlantDatabaseService, HttpClient],
   bootstrap: [AppComponent]
