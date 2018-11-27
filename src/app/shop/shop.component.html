@@ -1,3 +1,13 @@
-<p>
-  shop works!
-</p>
+<div class="background">
+  <h1 class="header">The Garden</h1>
+  <div class="mainDiv">
+    <div class="card" *ngFor="let plant of plants">
+      <div class="container">
+        <h2>{{ plant.product_name | uppercase}}</h2>
+        <h4>{{ plant.product_description}}</h4>
+        <h4>${{ plant.product_price }}.00</h4>
+        <button *ngIf="token !== null || undefined" id="delete" type="button" (click)="authDelete(plant.id)">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

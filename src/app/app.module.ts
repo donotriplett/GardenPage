@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { PlantDatabaseService } from "./services/plant-database.service";
+
 
 @NgModule({
   declarations: [
@@ -20,9 +23,10 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [PlantDatabaseService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
