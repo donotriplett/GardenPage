@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -11,7 +12,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { PlantDatabaseService } from "./services/plant-database.service";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
-
 
 @NgModule({
   declarations: [
@@ -25,9 +25,11 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgbModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule
+
   ],
   providers: [PlantDatabaseService, HttpClient],
   bootstrap: [AppComponent]
