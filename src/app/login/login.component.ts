@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from "../services/user.service"
-import { User } from "../models/user"
 import { FormBuilder, FormGroup, FormControl } from "@angular/forms"
 
 @Component({
@@ -17,7 +16,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this._fb.group({
-      username: "",
+      email: "",
       password: ""
     })
   }
@@ -26,8 +25,7 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
   }
-  console.log(this.loginForm.value)
-  this._login.signIn(this.loginForm.value).subscribe((res: any) => console.log(res))
+  this._login.signIn(this.loginForm.value).subscribe((res: any) => {this.token = res.token; localStorage.setItem("token", this.token)})
   }
 
 }
