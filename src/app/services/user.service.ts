@@ -17,7 +17,7 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  signIn(user: User): Observable<any> {
-    return this.http.post<any>(this._URL, user, httpOptions)
+  signIn(user: User): Observable<User[]> {
+    return this.http.post<User[]>(this._URL, user, httpOptions)
   }
 }
