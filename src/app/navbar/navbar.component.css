@@ -1,0 +1,22 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin: 2em;
+}
+
+.home{
+    margin-right: 78em;
+}
+
+#rectangle {
+    height: 70px;
+    width: 100%;
+    background-color: #66ae4f;
+    font-size: 15.5px;
+    font-weight: bold;
+  }
