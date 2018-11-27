@@ -9,7 +9,9 @@ import { AboutComponent } from './about/about.component';
 import { ShopComponent } from './shop/shop.component';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { PlantDatabaseService } from "./services/plant-database.service";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,15 +20,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingComponent,
     AboutComponent,
     ShopComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+
   ],
-  providers: [],
+  providers: [PlantDatabaseService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
