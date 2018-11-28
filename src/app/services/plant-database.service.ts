@@ -18,7 +18,7 @@ private _URL = "https://efa-gardenapp-backend.herokuapp.com/api/product"
   constructor(private _http: HttpClient) { }
 
   getPlants(): Observable<any> {
-    return this._http.get<any>(this._URL)
+    return this._http.get<any>(`${this._URL}/?limit=50`)
   }
 
   deletePlant(id: number) {
