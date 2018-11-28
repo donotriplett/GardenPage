@@ -1,0 +1,33 @@
+.background {
+    margin-top: 10vh;
+}
+
+.header {
+    color: #20CF7C;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.mainDiv {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.555);
+    transition: 0.3s;
+    width: 12vw;
+    margin: 10px;
+    margin-left: 25px;
+    text-align: center;
+    font-family: "Inter UI", sans-serif;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .9);
+    color: rgba(102, 174, 79);
+}
+
+.container {
+    padding: 10px 20px;
+}

@@ -1,0 +1,70 @@
+.background {
+    background-image: url("./cactus-nice.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 4vh;
+}
+
+.aboutBox{
+    width: 45em;
+    height: 25em;
+    margin-left: 35em;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .5);
+}
+
+.ourStory{
+    text-align: center ;
+    padding: 20px;
+}
+
+.aboutUsTitle{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.formWrapper {
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+    text-align: center;
+}
+
+.form {
+    display: inline-block;
+    width: 20vw;
+    padding: 2em;
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .6);
+}
+
+.fName {
+    display: block;
+    margin-bottom: 1vh;
+}
+
+.fNameInput {
+
+}
+
+.lName {
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.lNameInput {
+
+}
+
+.box {
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.boxInput {
+    margin-bottom: 1vh;
+}
