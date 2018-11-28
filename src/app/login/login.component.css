@@ -53,3 +53,12 @@
 .loginButton {
     margin-top: 3vh;
 }
+
+.background{
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background: url(../login/clean_about.jpeg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}

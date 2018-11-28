@@ -92,6 +92,11 @@ nav {
   transition: 400ms ease-in-out;
 }
 
+.links {
+  margin-right: 0;
+}
+
+
 nav ul {
   transform: translate(7em, -4.5em);
   margin: 0;
@@ -136,7 +141,8 @@ nav a:hover {
     /* text-align: center; */
     position: fixed;
     z-index: 999;
-    width: 100%;  }
+    width: 100%;
+  }
 
   #logo {
     grid-column: 1 / 3;
@@ -147,7 +153,6 @@ nav a:hover {
     grid-column: 4 / 4;
     display: flex;
     margin-left: 10em;
-    justify-content: flex-end;
     align-items: left;
   }
 
@@ -184,5 +189,4 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
- 
 }
