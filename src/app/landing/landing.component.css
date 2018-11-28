@@ -17,6 +17,7 @@ html { font-family: 'Inter UI', sans-serif; }
   padding: 10em;
   margin-left: 30em;
   margin-top:5em;
+  position: fixed;
 }
 
 button {
