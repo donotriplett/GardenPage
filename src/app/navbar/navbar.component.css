@@ -1,7 +1,7 @@
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding-top: 3vh;
 }
 
 li {
@@ -14,9 +14,11 @@ li {
 }
 
 #rectangle {
-    height: 70px;
-    width: 100%;
+    height: 8vh;
+    width: 100vw;
     background-color: #66ae4f;
     font-size: 15.5px;
     font-weight: bold;
+    margin-left: -1vw;
+    margin-top: -1vh;
   }
