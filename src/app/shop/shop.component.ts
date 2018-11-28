@@ -13,11 +13,16 @@ export class ShopComponent implements OnInit {
   constructor(private _db: PlantDatabaseService) { }
 
   ngOnInit() {
+    this.fetchPlants()
+  }
+
+  fetchPlants() {
     this._db.getPlants().subscribe((res: any) => this.plants = res )
   }
 
   authDelete(id: number) {
-    this._db.deletePlant(id)
+    console.log("working")
+    this._db.deletePlant(id).subscribe((res: any) => { console.log(res); this.fetchPlants() })
   }
 
 }
