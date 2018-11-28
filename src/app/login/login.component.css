@@ -1,0 +1,45 @@
+.wrapper {
+    margin-top: 30vh;
+    text-align: center;
+}
+
+.form {
+    margin: 0 auto;
+    width: 40vw;
+    height: 20vh;
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .9);
+    background-color: rgba(102, 174, 79, .1);
+}
+
+.container {
+    padding-top: 1vh;
+}
+
+.username {
+    display: inline;
+}
+
+.usernameLabel {
+    margin-right: 1vw;
+}
+
+.usernameInput {
+    border-radius: 10% 10%;
+}
+
+.password {
+    display: inline;
+}
+
+.passwordLabel {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.passwordInput {
+    border-radius: 10% 10%;
+}
+
+.loginButton {
+    margin-top: 3vh;
+}
