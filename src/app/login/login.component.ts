@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from "../services/user.service"
-import { FormBuilder, FormGroup, FormControl } from "@angular/forms"
+import { FormBuilder, FormGroup } from "@angular/forms"
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
 export class LoginComponent implements OnInit {
   token = ""
   loginForm: FormGroup
-  submitted = false
 
   constructor(private _fb: FormBuilder, private _login: UserService) { }
 
