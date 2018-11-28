@@ -16,10 +16,11 @@ html { font-family: 'Inter UI', sans-serif; }
   height: 25vh;
   transform: translate(575px, 200px);
   position: fixed;
-
+  margin-left: 4.5em;
 }
 .text-block{
   margin:0;
+  margin-left: 4em;
   width: 400px;
   height: 300px;
   overflow-wrap: break-word;
@@ -50,6 +51,7 @@ button {
         float: middle;
         color:#FFF;
         position: fixed;
+        margin-left: 8.5em;
     }
     
     button:hover {
