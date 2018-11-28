@@ -1,10 +1,19 @@
+.background {
+    background-image: url("./about-bkg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin-top: 8vh;
+}
+
 .aboutBox{
     width: 90em;
     height: 30em;
     margin-left: 15em;
-    outline-style: solid;
-    outline-color: gray ;
-    background-color: rgba(102, 174, 79, .5);
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .9);
 }
 
 .ourStory{
@@ -15,4 +24,47 @@
 .aboutUsTitle{
     text-align: center;
     padding-top: 1em;
+}
+
+.formWrapper {
+    margin: 0;
+    margin-top: 5vh;
+    padding: 0;
+    text-align: center;
+}
+
+.form {
+    display: inline-block;
+    width: 20vw;
+    padding: 2em;
+    box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .9);
+}
+
+.fName {
+    display: block;
+    margin-bottom: 1vh;
+}
+
+.fNameInput {
+
+}
+
+.lName {
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.lNameInput {
+
+}
+
+.box {
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.boxInput {
+    margin-bottom: 1vh;
 }
