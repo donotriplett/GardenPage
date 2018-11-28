@@ -21,7 +21,6 @@ export class ShopComponent implements OnInit {
   }
 
   authDelete(id: number) {
-    console.log("working")
     this._db.deletePlant(id).subscribe((res: any) => { console.log(res); this.fetchPlants() })
   }
 
