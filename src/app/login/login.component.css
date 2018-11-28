@@ -8,6 +8,7 @@
     width: 40vw;
     height: 20vh;
     box-shadow: 0 8px 16px 0 rgba(102, 174, 79, .9);
+    background-color: rgba(102, 174, 79, .1);
 }
 
 .container {
