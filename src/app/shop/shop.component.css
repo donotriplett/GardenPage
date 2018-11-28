@@ -3,8 +3,9 @@
 }
 
 .header {
-    color: rgba(102, 174, 79);
+    color: #20CF7C;
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .mainDiv {
