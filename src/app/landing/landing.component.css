@@ -14,14 +14,29 @@ html { font-family: 'Inter UI', sans-serif; }
 #Layer_1{
   width: 100%;
   height: 25vh;
-  padding: 10em;
-  margin-left: 30em;
-  margin-top:5em;
+  transform: translate(575px, 200px);
   position: fixed;
+
+}
+.text-block{
+  margin:0;
+  width: 400px;
+  height: 300px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-family:'Inter UI', sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+  color: #21CF7C;
+  position: fixed;
+  text-align: center;
+  transform: translate(1160px, 410px);
+  
 }
 
 button {
-  transform: translate(1300px, -20px);
+  transform: translate(1259px, 620px);
   font-size: 24px; 
         background-color: #21CF7C;
         border: none;
@@ -34,6 +49,7 @@ button {
         outline: none;
         float: middle;
         color:#FFF;
+        position: fixed;
     }
     
     button:hover {
